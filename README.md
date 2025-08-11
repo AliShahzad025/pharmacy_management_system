@@ -21,33 +21,23 @@ A robust and scalable **Pharmacy Management System** built using **MySQL**. This
 
 ##  Database Structure
 
-| Table Name               | Description                                                                 |
-|--------------------------|-----------------------------------------------------------------------------|
-| `pharmacies`             | Main registry of pharmacies with contact details                            |
-| `manufacturers`          | List of medicine manufacturers                                               |
-| `medicines`              | Medicine details with manufacturer linkage                                  |
-| `pharmacies_x_medicines` | Many-to-many relationship between pharmacies and medicines                  |
-| `inventories`            | Current inventory levels per pharmacy                                       |
-| `customers`              | Customer records per pharmacy                                               |
-| `sales`                  | Sale transactions per pharmacy/customer                                     |
-| `sales_items`            | Items involved in each sale (one-to-many from sales)                        |
-| `employees`              | Employee records per pharmacy                                               |
-| `suppliers`              | Supplier details for medicine purchasing                                    |
-| `purchases`              | Purchase records including supplier, pharmacy, and medicine details         |
-| `payments_details`       | Payment information per sale                                                |
-| `returns`                | Medicine return records with reason and refund info                         |
-| `pharmacies_x_suppliers`| Many-to-many relationship between pharmacies and suppliers  
+- `pharmacies`: Master table for pharmacy registration
+- `branches`: Pharmacy branches linked to their parent pharmacy
+- `medicines`: Details of available medicines
+- `inventory`: Stock levels per branch
+- `sales`: Records of sold items
+- `purchases`: Records of purchases from suppliers
+- `suppliers`: Supplier contact and transaction info
+- `employees`: Employee records per branch
+- `users`: Login credentials and roles
 
 > All tables include `pharmacy_id` and/or `branch_id` for multi-tenant identification.
 
 ##  Sample Data
 
 Includes:
+-  this project is ulpoaded on github by command line 
 - 100 pharmacies
 - 10 realistic entries for each related table (branches, sales, inventory, etc.)
-- Interlinked data with foreign keys and integrity maintained
- author_ALI SHAHZAD 
-
-
-   
-
+- Interlinked data with foreign keys and    integrity maintained 
+ 
