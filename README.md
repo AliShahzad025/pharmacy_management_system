@@ -1,7 +1,9 @@
 
 #  Pharmacy Management System
 
-A robust and scalable **Pharmacy Management System** built using **MySQL**. This system is designed using a **shared database and shared schema (multi-tenant)** architecture to support multiple pharmacies and their branches under a single application with distinct IDs.
+A robust and scalable **Pharmacy Management System** built using **MySQL**. This system is designed using a **shared database and shared schema (multi-tenant)** architecture to support multiple pharmacies and their branches under a single application with
+fk 
+ distinct IDs.
 
 ##  Features
 
