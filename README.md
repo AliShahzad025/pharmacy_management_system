@@ -39,6 +39,7 @@ Includes:
 - 100 pharmacies
 - 10 realistic entries for each related table (branches, sales, inventory, etc.)
 - Interlinked data with foreign keys and integrity maintained
+ author_ALI SHAHZAD 
 
 
    
